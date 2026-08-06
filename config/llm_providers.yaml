@@ -1,0 +1,34 @@
+groq:
+  base_url: https://api.groq.com/openai/v1
+  model: qwen/qwen3.6-27b
+  api_key_env: GROQ_API_KEY
+  supports_native_tools: true
+  context_window: 131072
+
+nvidia:
+  base_url: https://integrate.api.nvidia.com/v1
+  model: deepseek-ai/deepseek-v4-pro
+  api_key_env: NVIDIA_API_KEY
+  supports_native_tools: true
+  context_window: 131000
+  
+deepseek:
+  base_url: https://api.deepseek.com
+  model: deepseek-v4-flash
+  api_key_env: DEEPSEEK_API_KEY
+  supports_native_tools: true
+  context_window: 1000000
+
+glm:
+  base_url: https://open.bigmodel.cn/api/paas/v4
+  model: glm-4-plus
+  api_key_env: GLM_API_KEY
+  supports_native_tools: true
+  context_window: 128000
+
+ollama:
+  base_url: http://localhost:11434/v1
+  model: llama3.2:1b
+  api_key_env: null
+  supports_native_tools: false
+  context_window: 2048
